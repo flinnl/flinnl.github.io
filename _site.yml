@@ -1,0 +1,9 @@
+name: "flinnl-website"
+output_dir: "."
+navbar:
+  title: "flinnl Website"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "About Me"
+      href: about.html
