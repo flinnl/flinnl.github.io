@@ -1,0 +1,86 @@
+---
+title: "Maps for Sonoma!"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library("tidyverse")
+library("leaflet")
+sonoma <- read.csv("Sonoma.csv")
+```
+
+
+## Thursday
+
+```{r , echo=FALSE, warning=FALSE, message=FALSE}
+labelss <- sprintf(
+  "<strong>%s</strong><br/>%s<br/>%s",
+  filter(sonoma,Thursday == 1)$Location, filter(sonoma,Thursday == 1)$Address, filter(sonoma,Thursday == 1)$Notes
+) %>% lapply(htmltools::HTML)
+
+sonoma %>% filter(Thursday == 1) %>%
+  leaflet() %>%
+  addProviderTiles(providers$OpenStreetMap) %>%
+  addMarkers(label = labelss,
+             clusterOptions = markerClusterOptions(),
+             labelOptions = labelOptions(noHide = T))
+```
+
+## Friday
+
+```{r , echo=FALSE, warning=FALSE, message=FALSE}
+labelss <- sprintf(
+  "<strong>%s</strong><br/>%s<br/>%s",
+  filter(sonoma,Friday == 1)$Location, filter(sonoma,Friday == 1)$Address, filter(sonoma,Friday == 1)$Notes
+) %>% lapply(htmltools::HTML)
+
+sonoma %>% filter(Friday == 1) %>%
+  leaflet() %>%
+  addProviderTiles(providers$OpenStreetMap) %>%
+  addMarkers(label = labelss,
+             clusterOptions = markerClusterOptions(),
+             labelOptions = labelOptions(noHide = T))
+```
+
+## Saturday
+
+```{r , echo=FALSE, warning=FALSE, message=FALSE}
+labelss <- sprintf(
+  "<strong>%s</strong><br/>%s<br/>%s",
+  filter(sonoma,Saturday == 1)$Location, filter(sonoma,Saturday == 1)$Address, filter(sonoma,Saturday == 1)$Notes
+) %>% lapply(htmltools::HTML)
+
+
+sonoma %>% filter(Saturday== 1) %>%
+  leaflet() %>%
+  addProviderTiles(providers$OpenStreetMap) %>%
+  addMarkers(label = labelss,
+             clusterOptions = markerClusterOptions(),
+             labelOptions = labelOptions(noHide = T))
+```
+
+
+## Sunday
+
+```{r , echo=FALSE, warning=FALSE, message=FALSE}
+labelss <- sprintf(
+  "<strong>%s</strong><br/>%s<br/>%s",
+  filter(sonoma,Sunday == 1)$Location, filter(sonoma,Sunday == 1)$Address, filter(sonoma,Sunday == 1)$Notes
+) %>% lapply(htmltools::HTML)
+
+
+sonoma %>% filter(Sunday== 1) %>%
+  leaflet() %>%
+  addProviderTiles(providers$OpenStreetMap) %>%
+  addMarkers(label = labelss,
+             clusterOptions = markerClusterOptions(),
+             labelOptions = labelOptions(noHide = T))
+```
+
+
+The "leaflet" R package is copyright © 2014-2016 RStudio, Inc.
+
+The Leaflet JavaScript library is © 2010–2016 Vladimir Agafonkin, 2010–2011 CloudMade.
+
+Maps © OpenStreetMap contributors unless otherwise noted.
