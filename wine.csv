@@ -1,4 +1,18 @@
-rack,year,cost,brand,type,vineyard,notes,
-a11,2018,125,clos du val,merlot,clone,
-a12,2017,55,de tierra,sangiovese,,
-a13,2017,55,de tierra,sangiovese,,
+rack,year,cost,brand,type,vineyard,notes
+a12,2017,55,de tierra,sangiovese,de tierra,de tierra
+a13,2017,55,de tierra,sangiovese,de tierra,de tierra
+a14,2017,88,chimney rock,cabernet sauvignon,south hill,appellation
+a15,2017,88,chimney rock,cabernet sauvignon,south hill,appellation
+a16,2017,88,chimney rock,cabernet sauvignon,clone 7,appellation
+a17,2017,88,chimney rock,cabernet sauvignon,clone 7,appellation
+a18,2017,88,chimney rock,cabernet sauvignon,clone 7,appellation
+a19,2016,68,chimney rock,cabernet franc,cabernet franc,appellation
+a20,2016,68,chimney rock,cabernet franc,cabernet franc,appellation
+a21,2016,68,chimney rock,cabernet franc,cabernet franc,appellation
+a22,2016,68,chimney rock,cabernet franc,cabernet franc,appellation
+a23,2017,102,clos du val,cabernet sauvignon,hirondelle,hirondelle
+a24,2018,63.75,clos du val,cabernet sauvignon,special,special
+a25,2018,63.75,clos du val,cabernet sauvignon,special,special
+a26,2018,85,clos du val,cabernet franc,cabernet franc,cabernet franc
+a27,2018,55.25,clos du val,merlot,estate,estate
+a28,2018,55.25,clos du val,merlot,estate,estate
